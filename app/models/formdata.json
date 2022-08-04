@@ -1,0 +1,445 @@
+{ 
+    "inspectionlist":[
+    {
+    "site": "",
+    "work_area": "",
+    "supervisor": "",
+    "Inspector": "",
+    "job_descriptionn": "",
+    "completed_by": "",
+    "type": "",
+    "date": "",
+    "totalInterventions": {
+        "working_Standards": "",
+        "quality": "",
+        "site_Rules": "",
+        "environmental": "",
+        "protection": "",
+        "tools_Cables": "",
+        "miscellaneous": ""
+      },
+    "categories": [{
+        "working_Standards":[{
+            "work_At_Height": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "lifting_Operations": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "certifications": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "confined_SpaceWork": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "electric_Work": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            }
+        }],
+    "Quality": {
+            "setup": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "paperwork": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "certification_Training": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            }
+        },
+    "site_Rules": {
+            "hot_Works": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "isolation": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "fireExits": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "awareness": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            }
+        },
+    "environmental": {
+            "waste_Managementt": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "product_Contamination": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "cOSHH_Asbestos": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            }
+        },
+    "protection": {
+            "pPE": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "manual_Handling": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "other_Contractors": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            }
+        },
+    "tools_Cables": {
+            "power_Tools": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "voltage_Detector": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "toolsUser_Purpose": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            }
+        },
+    "miscellaneous": {
+            "vehicle_Condition": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "vehicle_Log_Sheet": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            },
+            "vehicle_Service_Records": {
+                "interventions": "",
+                "comments": "",
+                "completed": "",
+                "action_taken": ""
+            }
+        }
+    }]}
+
+   ] 
+}
+
+
+
+
+
+
+{
+    "categories": [
+        {
+            "working_Standards": [
+                {
+                    "work_At_Height": {
+                        "interventions": "Ab",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    },
+                    "lifting_Operations": {
+                        "interventions": "cd",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    },
+                    "certifications": {
+                        "interventions": "ef",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    },
+                    "confined_SpaceWork": {
+                        "interventions": "Aravind",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    },
+                    "electric_Work": {
+                        "interventions": "aa",
+                        "comments": "dn",
+                        "completed": "",
+                        "action_taken": ""
+                    }
+                }
+            ]
+        },
+        {
+            "Quality": [
+                {
+                    "setup": {
+                        "interventions": "",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    },
+                    " paperwork": {
+                        "interventions": "",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    },
+                    "certification_Training": {
+                        "interventions": "",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    }
+                             }
+            ]
+        },
+        {
+
+            "site_Rules": [
+            {
+        "hot_Works": {
+            "interventions": "",
+            "comments": "",
+            "completed": "",
+            "action_taken": ""
+        },
+        "isolation": {
+            "interventions": "",
+            "comments": "",
+            "completed": "",
+            "action_taken": ""
+        },
+        "fireExits": {
+            "interventions": "",
+            "comments": "",
+            "completed": "",
+            "action_taken": ""
+        },
+        "awareness": {
+            "interventions": "",
+            "comments": "",
+            "completed": "",
+            "action_taken": ""
+        }
+    }
+]
+},
+        {
+            "environmental": [
+                {
+                "waste_Managementt": {
+                    "interventions": "",
+                    "comments": "",
+                    "completed": "",
+                    "action_taken": ""
+                },
+                "product_Contamination": {
+                    "interventions": "",
+                    "comments": "",
+                    "completed": "",
+                    "action_taken": ""
+                },
+                "cOSHH_Asbestos": {
+                    "interventions": "",
+                    "comments": "",
+                    "completed": "",
+                    "action_taken": ""
+                
+                }
+            }
+        ]
+        },
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            "protection": [
+                {
+                "pPE": {
+                    "interventions": "",
+                    "comments": "",
+                    "completed": "",
+                    "action_taken": ""
+                },
+                "manual_Handling": {
+                    "interventions": "",
+                    "comments": "",
+                    "completed": "",
+                    "action_taken": ""
+                },
+                "other_Contractors": {
+                    "interventions": "",
+                    "comments": "",
+                    "completed": "",
+                    "action_taken": ""
+                }
+            }
+                  
+              ]
+          }
+        
+        {
+            "tools_Cables": [
+                  {
+                    "power_Tools": {
+                        "interventions": "",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    },
+                    "voltage_Detector": {
+                        "interventions": "",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    },
+                    "toolsUser_Purpose": {
+                        "interventions": "",
+                        "comments": "",
+                        "completed": "",
+                        "action_taken": ""
+                    }
+                  }
+              ]
+          },
+          {
+            "miscellaneous": [
+                  {
+                      "vehicle_Condition": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      },
+                      "vehicle_Log_Sheet": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      },
+                      "vehicle_Service_Records": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      }
+                  }
+              ]
+          }
+          {
+            "miscellaneous": [
+                  {
+                      "vehicle_Condition": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      },
+                      "vehicle_Log_Sheet": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      },
+                      "vehicle_Service_Records": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      }
+                  }
+              ]
+          }
+          {
+            "miscellaneous": [
+                  {
+                      "vehicle_Condition": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      },
+                      "vehicle_Log_Sheet": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      },
+                      "vehicle_Service_Records": {
+                          "interventions": "",
+                          "comments": "",
+                          "completed": "",
+                          "action_taken": ""
+                      }
+                  }
+              ]
+          }
+    ]
+}

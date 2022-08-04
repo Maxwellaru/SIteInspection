@@ -1,0 +1,293 @@
+<h2 style="text-align: center;">Inspection Data</h2>
+
+<div>
+
+  <div *ngFor="let data of products;let i = index">
+  
+      <div class = "row" *ngIf="i==0">
+        <div class="col-sm-2"><b>Site :</b></div>
+        <div class="col-sm-2">{{data.site}}</div>
+        <div class="col-sm-2"><b>Completed By :</b></div>
+        <div class="col-sm-2">{{data.completed_by}}</div>
+        <div class="col-sm-2"><b>Date :</b></div>
+        <div class="col-sm-2">{{data.date}}</div>
+     </div>
+
+     <div class = "row" *ngIf="i==0">
+      <div class="col-sm-2"><b>Work Area :</b></div>
+      <div class="col-sm-2">{{data.work_area}}</div>
+      <div class="col-sm-2"><b>Job Description :</b></div>
+      <div class="col-sm-4">{{data.job_descriptionn}}</div>
+   </div>
+
+   
+   <div class = "row" *ngIf="i==0">
+    <div class="col-sm-2"><b>Supervisor :</b></div>
+    <div class="col-sm-2">{{data.supervisor}}</div>
+    <div class="col-sm-2"><b>Inspector :</b></div>
+    <div class="col-sm-2">{{data.Inspector}}</div>
+    <div class="col-sm-2"><b>Type :</b></div>
+    <div class="col-sm-2">{{data.type}}</div>
+ </div>
+
+
+
+  <!-- <table border="1px" class="table" *ngIf="i==1">
+    <tr>
+        <td><b>Site :</b></td><td>{{data.site}}</td>
+        <td><b>Completed By :</b></td><td>{{data.completed_by}}</td>
+        <td><b>Date :</b></td><td>{{data.date}} </td>
+    </tr>
+    <tr>
+        <td><b>Work Area :</b></td><td>{{data.work_area}}</td>
+        <td><b>Job Description :</b></td><td>{{data.job_descriptionn}}</td>
+    </tr>
+    <tr>
+        <td><b>Supervisor :</b></td><td>{{data.supervisor}}</td>
+        <td><b>Inspector :</b></td><td>{{data.Inspector}}</td>
+        <td><b>Type :</b></td><td>{{data.type}}</td>
+    </tr>
+</table> -->
+  
+   <div class="row" *ngIf="i==2" style="height: 40px;background-color: aqua;margin-top: 20px;">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-2" style="height: 40px;padding-top:10px"><b>Interventions</b></div>
+      <div class="col-sm-2" style="height: 40px;padding-top:10px"><b>Comments</b></div>
+      <div class="col-sm-2" style="height: 40px;padding-top:10px"><b>Completed</b></div>
+      <div class="col-sm-2" style="height: 40px;padding-top:10px"><b>Action Taken</b></div>
+    </div>
+ 
+  <div class="row" *ngIf="data.sub_category === 'work_At_Height'&&i==3">
+    <div class="row" style="padding-left: 30px;background-color: lightskyblue;height: 40px;padding-top:10px ;"><b>A. Working Standards</b></div>
+      <div class="col-sm-4">1.Work At Height</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+
+    <div class="row" *ngIf="data.sub_category === 'lifting_Operations'&&i==7">
+      <div class="col-sm-4">2.Lifting Operations- Crane ForkLift Truck,Hoists</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+
+ 
+    <div class="row" *ngIf="data.sub_category === 'certifications'&&i==11">
+      <div class="col-sm-4">3.Certifications- daily checksheets for MEWP and FLT</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+
+    <div class="row" *ngIf="data.sub_category === 'confined_SpaceWork'&&i==15">
+      <div class="col-sm-4">4.Confined Space Work</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+ 
+  
+    <div class="row" *ngIf="data.sub_category === 'electric_Work'&&i==19">
+      <div class="col-sm-4">5.Electric Works</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+
+    <div class="row" *ngIf="data.sub_category === 'setup'&&i==23">
+      <div class="row" style="padding-left: 30px;background-color: lightskyblue;height: 40px;padding-top:10px ;"><b>B. Quality </b></div>
+      <div class="col-sm-4">6.Setup and Appearnce signage</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+    <div class="row" *ngIf="data.sub_category === 'paperwork'&&i==27">
+      <div class="col-sm-4">7.Paperwork(permits,Risk Assessments,Method Statements)</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+    <div class="row" *ngIf="data.sub_category === 'certification_Training'&&i==31">
+      <div class="col-sm-4">8.Certification- Training, Insurance Inspection,Induction Current</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+
+
+    <div class="row" *ngIf="data.sub_category === 'hot_Works'&&i==35">
+      <div class="row" style="padding-left: 30px;background-color: lightskyblue;height: 40px;padding-top:10px ;"><b> C.Site Rules </b> </div>
+      <div class="col-sm-4">9.Hot Works</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+    <div class="row" *ngIf="data.sub_category === 'isolation'&&i==39">
+      <div class="col-sm-4">10.Isolation and Lock offs</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+    <div class="row" *ngIf="data.sub_category === 'fireExits'&&i==43">
+      <div class="col-sm-4">11.Fire Exits and Escape Routes</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+
+    <div class="row" *ngIf="data.sub_category === 'awareness'&&i==47">
+      <div class="col-sm-4">12.Awareness - Fire Exit, Assembly Point</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'waste_Managementt'&&i==51">
+      <div class="row" style="padding-left: 30px;background-color: lightskyblue;height: 40px;padding-top:10px ;"><b> D.Environmental </b> </div>
+      <div class="col-sm-4">13.Waste Management</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+    <div class="row" *ngIf="data.sub_category === 'product_Contamination'&&i==55">
+      <div class="col-sm-4">14.Product Contamination</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'cOSHH_Asbestos'&&i==59">
+      <div class="col-sm-4">15.COSHH & Asbestos</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'pPE'&&i==63">
+      <div class="row" style="padding-left: 30px;background-color: lightskyblue;height: 40px;padding-top:10px ;"><b> E.Protection of Individuals </b></div>
+      <div class="col-sm-4">16.PPE</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'manual_Handling'&&i==67">
+      <div class="col-sm-4">17.Manual Handling</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'other_Contractors'&&i==71">
+      <div class="col-sm-4">18.Other Contractors</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'power_Tools'&&i==75">
+      <div class="row" style="padding-left: 30px;background-color: lightskyblue;height: 40px;padding-top:10px ;"><b>F.Tools, Cables & Other Equipment</b></div>
+      <div class="col-sm-4">19.Power Tools, Cables & Other Equipment</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'voltage_Detector'&&i==79">
+      <div class="col-sm-4">20.Voltage Detector Checked</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'toolsUser_Purpose'&&i==83">
+      <div class="col-sm-4">21.Tools User for Fit Purpose</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+   
+    <div class="row" *ngIf="data.sub_category === 'vehicle_Condition'&&i==87">
+      <div class="row" style="padding-left: 30px;background-color: lightskyblue;height: 40px;padding-top:10px ;"><b> G.Miscellaneous </b> </div>
+      <div class="col-sm-4">22.Vehicle Condition</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'vehicle_Log_Sheet'&&i==91">
+      <div class="col-sm-4">23.Vehicle Log Sheet Upto Date</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+    <div class="row" *ngIf="data.sub_category === 'vehicle_Service_Records'&&i==95">
+      <div class="col-sm-4">24.Vehicle Service Records</div>
+      <div class="col-sm-2">{{data.Interventions}}</div>
+      <div class="col-sm-2">{{data.comments}}</div>
+      <div class="col-sm-2">{{data.completed}}</div>
+      <div class="col-sm-2">{{data.action_taken}}</div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <table border="1" style="margin-top: 10px;"  >
+   <tbody >
+      <tr style="background-color: lightseagreen;height:40px;text-align: center;" >
+          <td><b>Total Interventions By Section</b></td>
+          
+      </tr>
+      <tr><td style="width: 450px;">A.Working Standards</td><td style="width: 100px;text-align: center;">1</td></tr>
+      <tr><td>B.Quality</td><td style="width: 100px;text-align: center;">0</td></tr>
+      <tr><td>C.Site Rules</td><td style="width: 100px;text-align: center;">1</td></tr>
+      <tr><td>D.Environmental</td><td style="width: 100px;text-align: center;">3</td></tr>
+      <tr><td>E.Protection Of Individuals</td><td style="width: 100px;text-align: center;">2</td></tr>
+      <tr><td>F.Tools, Cables & other Equipment</td><td style="width: 100px;text-align: center;">1</td></tr>
+      <tr><td>G.Miscellanous</td><td style="width: 100px;text-align: center;">0</td></tr>
+      <tr ><td><b>Total</b></td><td style="width: 100px;text-align: center;">{{total}}</td></tr>
+   </tbody>
+  </table>
+
+ 

@@ -1,0 +1,314 @@
+<div class="container-fluid">
+<div style="background-color: lightblue;">
+  <h1 >SITE INSPECTION</h1>
+</div>
+
+<!-- <h1>{{products1}}
+</h1>
+<h1>{{title}}</h1> -->
+ <nav>
+  <a routerLink="/register">Login</a>
+</nav>
+<router-outlet></router-outlet>
+<!-- <app-loginpage></app-loginpage> -->
+<!-- <app-manager></app-manager> -->
+<!-- <app-inspector></app-inspector> -->
+
+<!-- <table border="1px" class="table" *ngFor="let product of products">
+  <tr>
+      <td><b>Site :</b></td><td>{{product.site}}</td>
+      <td><b>Completed By :</b></td><td>{{product.completed_by}}</td>
+      <td><b>Date :</b></td><td>{{product.date}}</td>
+  </tr>
+  <tr>
+      <td><b>Work Area :</b></td><td>{{product.work_area}}</td>
+      <td><b>Job Description :</b></td><td style="border-right: 0ch;">{{product.job_descriptionn}}</td>
+  </tr>
+  <tr>
+      <td><b>Supervisor :</b></td><td>{{product.supervisor}}</td>
+      <td><b>Inspector :</b></td><td>{{product.Inspector}}</td>
+      <td><b>Type :</b></td><td>{{product.type}}</td>
+  </tr>
+</table> -->
+<form (ngSubmit)="onSubmit()">
+<!-- <table *ngFor="let product of products1" class="table" > -->
+
+  <table border="1px" class="table" hidden>
+    <tr>
+        <td><b>Site :</b></td><td><input type="text" id="site"  [(ngModel)]="site" name="site"></td>
+        <td><b>Completed By :</b></td><td><input type="text" id="completedby"  [(ngModel)]="completed_by" name="completedby"></td>
+        <td><b>Date :</b></td><td><input type="date" id="date"  [(ngModel)]="date" name="date"></td>
+    </tr>
+    <tr>
+        <td><b>Work Area :</b></td><td><input type="text" id="work_area"  [(ngModel)]="work_area" name="work_area"></td>
+        <td><b>Job Description :</b></td><td style="border-right: 0ch;"><input type="text" id="job_descriptionn"  [(ngModel)]="job_descriptionn" name="jobdescription"></td>
+    </tr>
+    <tr>
+        <td><b>Supervisor :</b></td><td><input type="text" id="supervisor"  [(ngModel)]="supervisor" name="supervisor"></td>
+        <td><b>Inspector :</b></td><td><input type="text" id="inspector"  [(ngModel)]="Inspector" name="inspector"></td>
+        <td><b>Type :</b></td><td><input type="text" id="type"  [(ngModel)]="type" name="type"></td>
+    </tr>
+  </table>
+
+  <table  class="table" hidden>
+  <tr style="text-align: center;">       
+    <td><b></b></td>
+    <td><b>Interventions</b></td>
+    <td><b>comments</b></td>
+    <td><b>Completed</b></td>
+    <td><b>Action Taken</b></td>
+   </tr>
+      <tr style="background-color: blue;height:40px;text-align: center;">
+        <td ><b>A.Working Standards</b></td>  
+     </tr>
+     <tr>
+      <td>1.Work At Height</td>
+      <td><input type="text"  [(ngModel)]=" work_At_Height.Interventions" name="Interventions1"></td>
+      <td><input type="text"  [(ngModel)]=" work_At_Height.comments" name="comments1"></td>
+      <td><input type="text"  [(ngModel)]=" work_At_Height.completed" name="completed1"></td>
+       <td><input type="text"  [(ngModel)]=" work_At_Height.action_taken" name="action_taken1"></td>
+      </tr>
+  <tr>
+      <td>2.Lifting Operations- Crane ForkLift Truck,Hoists</td>
+       
+      <td><input type="text"  [(ngModel)]="lifting_Operations.Interventions" name="Interventions2"></td>
+      <td><input type="text"  [(ngModel)]="lifting_Operations.comments" name="comments2"></td>
+      <td><input type="text"  [(ngModel)]="lifting_Operations.completed" name="completed2"></td>
+      <td><input type="text"  [(ngModel)]="lifting_Operations.action_taken" name="action_taken2"></td>
+  </tr>
+
+    <tr> <td>3.Certifications- daily checksheets for MEWP and FLT</td>
+      <td><input type="text"  [(ngModel)]="certifications.Interventions" name="Interventions3"></td>
+      <td><input type="text"  [(ngModel)]="certifications.comments" name="comments3"></td>
+      <td><input type="text"  [(ngModel)]="certifications.completed" name="completed3"></td>
+      <td><input type="text"  [(ngModel)]="certifications.action_taken" name="action_taken3"></td>
+    </tr> 
+  <tr>
+  <td>4.Confined Space Work</td>
+  <td><input type="text" [(ngModel)]="confined_SpaceWork.Interventions" name="Interventions4"></td>
+  <td><input type="text" [(ngModel)]="confined_SpaceWork.comments" name="comments4"></td>
+  <td><input type="text" [(ngModel)]="confined_SpaceWork.completed" name="completed4"></td>
+  <td><input type="text" [(ngModel)]="confined_SpaceWork.action_taken" name="action_taken4"></td>
+  </tr>
+  <tr>
+    <td>5.Electric Works</td>
+    <td><input type="text"  [(ngModel)]="electric_Work.Interventions" name="Interventions5"></td>
+    <td><input type="text"  [(ngModel)]="electric_Work.comments" name="comments5"></td>
+    <td><input type="text"  [(ngModel)]="electric_Work.completed" name="completed5"></td>
+    <td><input type="text"  [(ngModel)]="electric_Work.action_taken" name="action_taken5"></td>
+  </tr>
+
+
+
+
+  <tr style="background-color: blue;height:40px">
+   <td><b>B.Quality</b></td>   
+   </tr>
+   
+
+ <tr> <td>6.Setup and Appearnce signage</td>
+ 
+  <td><input type="text"  [(ngModel)]="setup.Interventions" name="Interventions6"></td>
+  <td><input type="text"  [(ngModel)]="setup.comments" name="comments6"></td>
+  <td><input type="text"  [(ngModel)]="setup.completed" name="completed6"></td>
+  <td><input type="text"  [(ngModel)]="setup.action_taken" name="action_taken6"></td>
+  
+ 
+</tr>
+
+<tr>
+ <td>7.Paperwork(permits,Risk Assessments,Method Statements</td>
+ <td><input type="text"  [(ngModel)]="paperwork.Interventions" name="Interventions7"></td>
+  <td><input type="text"  [(ngModel)]="paperwork.comments" name="comments7"></td>
+  <td><input type="text"  [(ngModel)]="paperwork.completed" name="completed7"></td>
+  <td><input type="text"  [(ngModel)]="paperwork.action_taken" name="action_taken7"></td>
+</tr> 
+<tr>
+ <td>8.Certification- Training, Insurance Inspection,Induction Current</td>
+ <td><input type="text"  [(ngModel)]="certification_Training.Interventions" name="Interventions8"></td>
+  <td><input type="text"  [(ngModel)]="certification_Training.comments" name="comments8"></td>
+  <td><input type="text"  [(ngModel)]="certification_Training.completed" name="completed8"></td>
+  <td><input type="text"  [(ngModel)]="certification_Training.action_taken" name="action_taken8"></td>
+</tr>
+<!--Site Rules-->
+<tr style="background-color: blue;height:40px">
+  <td><b>C.Site Rules</b></td>  
+</tr>
+<tr>
+
+  <td>9.Hot Works</td>
+  <td><input type="text" [(ngModel)]="hot_Works.Interventions" name="Interventions9"></td>
+  <td><input type="text" [(ngModel)]="hot_Works.comments" name="comments9"></td>
+  <td><input type="text" [(ngModel)]="hot_Works.completed" name="completed9"></td>
+  <td><input type="text" [(ngModel)]="hot_Works.action_taken" name="action_taken9"></td>
+</tr>
+
+<tr>
+<td>10.Isolation and Lock offs</td>
+<td><input type="text" [(ngModel)]="isolation.Interventions" name="Interventions10"></td>
+  <td><input type="text" [(ngModel)]="isolation.comments" name="comments10"></td>
+  <td><input type="text" [(ngModel)]="isolation.completed" name="completed10"></td>
+  <td><input type="text"[(ngModel)]="isolation.action_taken" name="action_taken10"></td>
+</tr>
+
+<tr>
+  <td>11.Fire Exits and Escape Routes</td>
+  <td><input type="text" [(ngModel)]="fireExits.Interventions" name="Interventions11"></td>
+  <td><input type="text" [(ngModel)]="fireExits.comments" name="comments11"></td>
+  <td><input type="text" [(ngModel)]="fireExits.completed" name="completed11"></td>
+  <td><input type="text" [(ngModel)]="fireExits.action_taken" name="action_taken11"></td>
+  </tr>
+
+  <tr>
+    <td>12.Awareness - Fire Exit, Assembly Point.</td>
+    <td><input type="text" [(ngModel)]="awareness.Interventions" name="Interventions12"></td>
+    <td><input type="text" [(ngModel)]="awareness.comments" name="comments12"></td>
+    <td><input type="text" [(ngModel)]="awareness.completed" name="completed12"></td>
+    <td><input type="text" [(ngModel)]="awareness.action_taken" name="action_taken12"></td>
+    </tr>
+
+
+    <tr style="background-color: blue;height:40px">
+      <td><b>D.Environmental</b></td>  
+    </tr>
+    <tr>
+    
+      <td>13.Waste Management</td>
+      <td><input type="text" [(ngModel)]="waste_Managementt.Interventions" name="Interventions13"></td>
+      <td><input type="text" [(ngModel)]="waste_Managementt.comments" name="comments13"></td>
+      <td><input type="text" [(ngModel)]="waste_Managementt.completed" name="completed13"></td>
+      <td><input type="text" [(ngModel)]="waste_Managementt.action_taken" name="action_taken13"></td>
+    </tr>
+    
+    <tr>
+    <td>14.Product Contamination</td>
+    <td><input type="text" [(ngModel)]="product_Contamination.Interventions" name="Interventions14"></td>
+    <td><input type="text" [(ngModel)]="product_Contamination.comments" name="comments14"></td>
+    <td><input type="text" [(ngModel)]="product_Contamination.completed" name="completed14"></td>
+    <td><input type="text" [(ngModel)]="product_Contamination.action_taken" name="action_taken14"></td>
+    </tr>
+
+    <tr>
+      <td>15.COSHH & Asbestos</td>
+      <td><input type="text" [(ngModel)]="cOSHH_Asbestos.Interventions" name="Interventions15"></td>
+      <td><input type="text" [(ngModel)]="cOSHH_Asbestos.comments" name="comments15"></td>
+      <td><input type="text" [(ngModel)]="cOSHH_Asbestos.completed" name="completed15"></td>
+      <td><input type="text" [(ngModel)]="cOSHH_Asbestos.action_taken" name="action_taken15"></td>
+      </tr>
+
+
+      <tr style="background-color: blue;height:40px">
+        <td><b>E.Protection of Individuals</b></td>  
+      </tr>
+      <tr>
+      
+        <td>16.PPE</td>
+        <td><input type="text" [(ngModel)]="pPE.Interventions" name="Interventions16"></td>
+        <td><input type="text" [(ngModel)]="pPE.comments" name="comments16"></td>
+        <td><input type="text" [(ngModel)]="pPE.completed" name="completed16"></td>
+        <td><input type="text" [(ngModel)]="pPE.action_taken" name="action_taken16"></td>
+      </tr>
+      
+      <tr>
+      <td>17.Manual Handling</td>
+      <td><input type="text" [(ngModel)]="manual_Handling.Interventions" name="Interventions17"></td>
+      <td><input type="text" [(ngModel)]="manual_Handling.comments" name="comments17"></td>
+      <td><input type="text" [(ngModel)]="manual_Handling.completed" name="completed17"></td>
+      <td><input type="text" [(ngModel)]="manual_Handling.action_taken" name="action_taken17"></td>
+      </tr>
+  
+      <tr>
+        <td>18.Other Contractors</td>
+        <td><input type="text" [(ngModel)]="other_Contractors.Interventions" name="Interventions18"></td>
+        <td><input type="text" [(ngModel)]="other_Contractors.comments" name="comments18"></td>
+        <td><input type="text" [(ngModel)]="other_Contractors.completed" name="completed18"></td>
+        <td><input type="text" [(ngModel)]="other_Contractors.action_taken" name="action_taken18"></td>
+        </tr>
+
+
+        <tr style="background-color: blue;height:40px">
+          <td><b>F.Tools, Cables & Other Equipment</b></td>  
+        </tr>
+        <tr>
+        
+          <td>19.Power Tools, Cables & Other Equipment</td>
+        
+          <td><input type="text" [(ngModel)]="power_Tools.Interventions" name="Interventions19"></td>
+          <td><input type="text" [(ngModel)]="power_Tools.comments" name="comments19"></td>
+          <td><input type="text" [(ngModel)]="power_Tools.completed" name="completed19"></td>
+          <td><input type="text" [(ngModel)]="power_Tools.action_taken" name="action_taken19"></td>
+        </tr>
+        
+        <tr>
+        <td>20.Voltage Detector Checked</td>
+        <td><input type="text" [(ngModel)]="voltage_Detector.Interventions" name="Interventions20"></td>
+        <td><input type="text" [(ngModel)]="voltage_Detector.comments" name="comments20"></td>
+        <td><input type="text" [(ngModel)]="voltage_Detector.completed" name="completed20"></td>
+        <td><input type="text" [(ngModel)]="voltage_Detector.action_taken" name="action_taken20"></td>
+        </tr>
+    
+        <tr>
+          <td>21.Tools User for Fit Purpose</td>
+          <td><input type="text" [(ngModel)]="toolsUser_Purpose.Interventions" name="Interventions21"></td>
+          <td><input type="text" [(ngModel)]="toolsUser_Purpose.comments" name="comments21"></td>
+          <td><input type="text" [(ngModel)]="toolsUser_Purpose.completed" name="completed21"></td>
+          <td><input type="text" [(ngModel)]="toolsUser_Purpose.action_taken" name="action_taken21"></td>
+          </tr>
+
+
+          <tr style="background-color: blue;height:40px">
+            <td><b>G.Miscellaneous</b></td>  
+          </tr>
+          <tr>
+          
+             <td>22.Vehicle Condition</td>
+             <td><input type="text" [(ngModel)]="vehicle_Condition.Interventions" name="Interventions22"></td>
+             <td><input type="text" [(ngModel)]="vehicle_Condition.comments" name="comments22"></td>
+             <td><input type="text" [(ngModel)]="vehicle_Condition.completed" name="completed22"></td>
+             <td><input type="text" [(ngModel)]="vehicle_Condition.action_taken" name="action_taken22"></td>
+
+          </tr>
+          
+          <tr>
+          <td>23.Vehicle Log Sheet Upto Date</td>
+          
+          <td><input type="text" [(ngModel)]="vehicle_Log_Sheet.Interventions" name="Interventions23"></td>
+          <td><input type="text" [(ngModel)]="vehicle_Log_Sheet.comments" name="comments23"></td>
+          <td><input type="text" [(ngModel)]="vehicle_Log_Sheet.completed" name="completed23"></td>
+          <td><input type="text" [(ngModel)]="vehicle_Log_Sheet.action_taken" name="action_taken23"></td>
+          </tr>
+      
+          <tr>
+            <td>24.Vehicle Service Records</td>
+            <td><input type="text" [(ngModel)]="vehicle_Service_Records.Interventions" name="Interventions24"></td>
+            <td><input type="text" [(ngModel)]="vehicle_Service_Records.comments" name="comments24"></td>
+            <td><input type="text" [(ngModel)]="vehicle_Service_Records.completed" name="completed24"></td>
+            <td><input type="text" [(ngModel)]="vehicle_Service_Records.action_taken" name="action_taken24"></td>
+            </tr>
+    
+
+</table>
+<input type="submit" value = "submit" class="button" hidden>
+</form>
+
+
+<!--End Of Second Table-->
+<div style="border-bottom-style: 2px solid black"></div>
+<table border="0" class="table"  hidden>
+ <tbody >
+    <tr style="background-color: blue;height:40px" hidden>
+        <td><b>Total Interventions By Section</b></td>
+        <td></td>
+    </tr>
+    <tr><td>A.Working Standards</td><td>1</td></tr>
+    <tr><td>B.Quality</td><td>0</td></tr>
+    <tr><td>C.Site Rules</td><td>1</td></tr>
+    <tr><td>D.Environmental</td><td>3</td></tr>
+    <tr><td>E.Protection Of Individuals</td><td>2</td></tr>
+    <tr><td>F.Tools, Cables & other Equipment</td><td>1</td></tr>
+    <tr><td>G.Miscellanous</td><td>0</td></tr>
+    <tr><td>Total</td><td>9</td></tr>
+ </tbody>
+</table>
+
+</div>

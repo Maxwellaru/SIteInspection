@@ -1,0 +1,55 @@
+
+
+<h2 style="text-align: center ;">Inspection List</h2>
+
+
+ <table border="1px" class="table"  style="text-align: center;">
+    <tr >
+        <td ><b>Date </b></td>
+        <td><b>Site </b></td>
+        <td><b>Work Area </b></td>
+        <td><b>Inspector </b></td>
+        <td><b>Entered By</b></td>
+        <td><b>Total Interventions</b></td>
+        <td><b>Outstanding</b></td>
+        <td><b>Inspections</b></td>
+        <!-- <td><b>Attachment</b></td> -->
+    </tr>
+    <tr *ngFor="let product of products" style="align-items: center;">
+        <td>{{product.date}}</td>
+        <td>{{product.site}}</td>
+        <td>{{product.work_area}}</td>
+        <td>{{product.Inspector}}</td>
+        <td>{{product.supervisor}}</td>
+        <td>{{product.total_interventions}}</td>
+        <td>{{product.outstanding}}</td>
+        <td><a (click)="ongetData(product.idTable_one)">View</a></td>
+        <!-- <td><a href="http://localhost:4200/inspector">View</a></td>
+        -->
+        
+    </tr>
+  </table> 
+
+<h1 style="margin-top: 10px;background-color: bisque;"> Add New Inspector</h1>
+
+ <form (ngSubmit)="onSubmit()" >
+    <div class="form-group">
+  <table border="1px" class="table">
+    <tr>
+        <td><b>Name :</b></td><td><input type="text" id="site"  [(ngModel)]="model.name" name="site"></td></tr>
+      <tr>  <td><b>Role :</b></td><td><input type="text" id="completedby"  [(ngModel)]="model.type" name="completedby"></td></tr>
+      <tr>  <td><b>Password :</b></td><td><input type="text" id="date"  [(ngModel)]="model.password" name="date"></td>
+    </tr>
+    <tr>
+        <td><b>Supervisor :</b></td><td><input type="text" id="supervisor"  [(ngModel)]="model.supervisor" name="supervisor"></td>
+    </tr>
+</table>
+<input type = "submit" value = "submit">
+
+</div>
+</form>
+
+
+
+
+

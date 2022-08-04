@@ -1,0 +1,13 @@
+
+
+
+<div style="text-align: center ;">
+    <h2>Login Page</h2>
+<form (ngSubmit)="onSubmit()">
+    <label>User Name : </label>
+    <input type="text" [(ngModel)]="UserModel.userName" name="userName"><br>
+    <label>Password : </label>
+    <input type="password" [(ngModel)]="UserModel.password" name="password"><br>
+    <input type="submit">
+</form>
+</div>

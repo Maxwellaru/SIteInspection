@@ -1,0 +1,27 @@
+.test {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.test > div {
+    margin-top: 5px;
+    padding: 10px;
+    //background-color: #FF0000;
+}
+
+
+
+  .row {
+    border: 1px solid;
+  }
+
+  
+  .col-sm-2 {
+    border:   1px solid;
+    height: 30px;
+    padding-top: 5px;
+  }
+
+  .col-sm-3 {
+    border-right:   1px solid;
+  }
